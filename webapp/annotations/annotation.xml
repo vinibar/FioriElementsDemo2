@@ -44,24 +44,6 @@
                     </Collection>
                 </Annotation>
 
-                <Annotation Term="UI.FieldGroup" Qualifier="generalData">
-                    <Record Type="UI.FieldGroupType">
-                        <PropertyValue Property="Label" String="{@i18n>general}" />
-                        <PropertyValue Property="Data">
-                            <Collection>
-                                <Record Type="UI.DataField">
-                                    <PropertyValue Property="Label" String="{@i18n>id}"/>
-                                    <PropertyValue Property="Value" Path="ID"/>
-                                </Record>
-                                <Record Type="UI.DataField">
-                                    <PropertyValue Property="Label" String="{@i18n>name}"/>
-                                    <PropertyValue Property="Value" Path="Name"/>
-                                </Record>
-                            </Collection>
-                        </PropertyValue>
-                    </Record>
-                </Annotation>
-
                 <Annotation Term="UI.FieldGroup" Qualifier="address">
                     <Record Type="UI.FieldGroupType">
                         <PropertyValue Property="Label" String="{@i18n>address}" />
@@ -111,10 +93,6 @@
 
                 <Annotation Term="UI.Facets">
                     <Collection>
-                        <Record Type="UI.ReferenceFacet">
-                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#generalData"/>
-                            <PropertyValue Property="Label" String="{@i18n>general}"/>
-                        </Record>                        
                         <Record Type="UI.ReferenceFacet">
                             <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#address"/>
                             <PropertyValue Property="Label" String="{@i18n>address}"/>
